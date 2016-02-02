@@ -1,0 +1,97 @@
+body,html,ul{margin: 0;padding: 0}
+ul{list-style: none;}
+li{float: left;}
+img{width: 100%;opacity: 1;}
+.container{
+	position: relative;
+	top:100px;
+	background-color: ;
+}
+header{
+	position: absolute;
+	height: 100px;
+	width: 100%;
+}
+header ul{
+	height: 100px;
+}
+header li{
+	box-sizing: border-box;
+	box-shadow: inset 0 0 6px 6px #ffffff;
+	background: linear-gradient(to top,#2c2a2a,#837e7e);
+	text-align: center;
+	font-size: 35px;
+	line-height: 100px;
+	width: 25%;
+	border-right: 1px solid #ffffff;
+}
+.perspective_div{
+	perspective:800px;
+	perspective-origin: top;;
+	/*text-align: center;*/
+	position: relative;
+	margin: 0 auto;;
+	background-color: ;
+	width: 450px;
+	height: 352px;
+}
+
+.perspective_div ul{
+	transform-style: preserve-3d;
+	transition:all 1.0s ease-in-out;
+	transform-origin: center;
+}
+
+.perspective_div  li{
+	position: absolute;
+	width: 450px;
+	height: 253px;
+	overflow: hidden;
+}
+
+.perspective_div li:nth-child(1){
+	transform: translateZ(225px);
+}
+.perspective_div li:nth-child(2){
+	transform: rotateY(90deg) translateZ(225px);
+}
+.perspective_div li:nth-child(3){
+		transform: rotateY(180deg) translateZ(225px);
+}
+.perspective_div li:nth-child(4){
+		transform: rotateY(-90deg) translateZ(225px);
+}
+
+.point{
+	margin: 0 auto;
+	width: 120px;
+	height: 40px;
+	background-color: ;
+	overflow: hidden;
+}
+
+.point ul{
+	width: 120px;
+	height: 20px;
+	padding: 10px 0;
+	margin: 0 0 0 5px;
+}
+
+.point li{
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	padding: 0;
+	margin-right: 10px;
+	background-color: #D9D9D9;
+	cursor: pointer;
+}
+
+.point li.active{
+	background-color: #0093DD;
+	box-shadow: 0 0 0px 3px #262121;
+}
+
+.point i{
+	display: none;
+}
